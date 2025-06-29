@@ -1,0 +1,35 @@
+import React from 'react';
+import { SiCss3, SiHtml5, SiJavascript, SiReact, SiTailwindcss } from 'react-icons/si';
+
+const Frontend = () => {
+    return (
+       <div className=" rounded-lg shadow-lg p-6  items-center text-center border-1 ">
+        <h3 className="text-xl font-bold mb-4 border-b-1 pb-2 ">Frontend</h3>
+        <div className="grid grid-cols-2 space-y-3 ">
+          <div className="flex items-center space-x-3">
+            <SiReact size={30} className="text-blue-500" />
+            <span>React</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <SiJavascript size={30} className="text-yellow-400" />
+            <span>JavaScript</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <SiTailwindcss size={30} className="text-teal-400" />
+            <span>Tailwind </span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <SiCss3 size={30} className="text-blue-600" />
+            <span>CSS3</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <SiHtml5 size={30} className="text-orange-600" />
+            <span>HTML5</span>
+          </div>
+          
+        </div>
+      </div>
+    );
+};
+
+export default Frontend;

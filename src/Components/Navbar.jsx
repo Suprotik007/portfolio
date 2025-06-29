@@ -1,20 +1,66 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 import TextPressure from '../../ReactBits/TextPressure/TextPressure';
+import { Link } from 'react-scroll';
+
+
 
   
 
 const Navbar = () => {
-    const links=(
-       <div className='flex space-x-1.5 md:space-x-8 lg:space-x-20  font-semibold lg:text-xl justify-evenly'>
+ const links = (
+  <div className="flex space-x-1.5 md:space-x-8 lg:space-x-20 font-semibold lg:text-xl justify-evenly">
+    <Link
+      to="Intro"
+      smooth={true}
+      duration={500}
+      spy={true}
+      offset={-80} 
+      className="cursor-pointer"
+      activeClass="border-b-2"
+    >
+      Intro
+    </Link>
 
-      <NavLink to='/intro'>Intro</NavLink>
-      <NavLink to='/About'>About</NavLink>
-      <NavLink to='/Skills'>Skills</NavLink>
-      <NavLink to='/Projects'>Projects</NavLink>
+    <Link
+      to="About"
+      smooth={true}
+      duration={500}
+      spy={true}
+      offset={-80}
+      className="cursor-pointer"
+      activeClass="border-b-2"
+    >
+      About
+    </Link>
 
-       </div>
-    )
+    <Link
+      to="Skills"
+      smooth={true}
+      duration={500}
+      spy={true}
+      offset={-80}
+      className="cursor-pointer"
+      activeClass="border-b-2"
+    >
+      Skills
+    </Link>
+
+    <Link
+      to="Projects"
+      smooth={true}
+      duration={500}
+      spy={true}
+      offset={-80}
+      className="cursor-pointer"
+      activeClass="border-b-2"
+    >
+      Projects
+    </Link>
+  </div>
+);
+
+
     return (
        <div className="navbar w-11/12 bg-[#151b14]  mx-auto sticky top-0 z-2 ">
   <div className="navbar-start ">
@@ -48,10 +94,53 @@ const Navbar = () => {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-50 w-52 p-2 shadow">
         
-         <NavLink to='/intro'>Intro</NavLink>
-      <NavLink to='/About'>About</NavLink>
-      <NavLink to='/Skills'>Skills</NavLink>
-      <NavLink to='/Projects'>Projects</NavLink>
+        <Link
+      to="Intro"
+      smooth={true}
+      duration={500}
+      spy={true}
+      offset={-80} 
+      className="cursor-pointer"
+      activeClass="border-b-2"
+    >
+      Intro
+    </Link>
+
+    <Link
+      to="About"
+      smooth={true}
+      duration={500}
+      spy={true}
+      offset={-80}
+      className="cursor-pointer w-3/12"
+      activeClass="border-b-2"
+    >
+      About
+    </Link>
+
+    <Link
+      to="Skills"
+      smooth={true}
+      duration={500}
+      spy={true}
+      offset={-80}
+      className="cursor-pointer"
+      activeClass="border-b-2"
+    >
+      Skills
+    </Link>
+
+    <Link
+      to="Projects"
+      smooth={true}
+      duration={500}
+      spy={true}
+      offset={-80}
+      className="cursor-pointer"
+      activeClass="border-b-2"
+    >
+      Projects
+    </Link>
       </ul> 
      
     </div>

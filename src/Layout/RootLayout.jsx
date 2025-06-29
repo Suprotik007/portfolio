@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from '../Components/Navbar';
 import Intro from '../Contents/Intro';
 import About from '../Contents/About';
-// import Contact from '../Components/Contact';
+import Skills from '../Contents/Skills/Skills';
+
 
 const RootLayout = () => {
     return (
@@ -10,8 +11,8 @@ const RootLayout = () => {
            
              <Navbar></Navbar>
             <Intro></Intro>
-            {/* <Contact></Contact> */}
             <About></About>
+            <Skills></Skills>
           
         </div>
     );
