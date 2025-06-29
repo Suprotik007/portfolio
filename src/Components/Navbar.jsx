@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
  const links = (
-  <div className="flex space-x-1.5 md:space-x-8 lg:space-x-20 font-semibold lg:text-xl justify-evenly">
+  <div className="flex space-x-1.5 md:space-x-6 lg:space-x-15 font-semibold lg:text-lg justify-evenly ">
     <Link
       to="Intro"
       smooth={true}
@@ -79,10 +79,27 @@ const Navbar = () => {
   </div>
   <div className="navbar-end justify-around hidden  md:flex">
     <ul className="menu menu-horizontal ">
-
       {links}
-  
     </ul>
+    
+    <button className="
+    btn-sm md:btn-sm 
+    relative
+   md:px-3 lg:px-5 lg:py-1
+    rounded-xl
+    bg-[#6f8b76]
+    text-gray-900
+     
+    border-2 border-[#7b927e]
+    shadow-[5px_5px_0_0_#4f6653]
+    transition-transform duration-500
+    hover:translate-x-2 hover:translate-y-3
+    active:translate-x-0 active:translate-y-0
+    flex flex-row items-center gap-2 justify-center
+    ">
+    <span className='text-center'><a href="">Hire </a></span>
+    
+    </button>
   </div>
  {/* small device */}
   <div className="dropdown navbar-end md:hidden">
@@ -92,7 +109,7 @@ const Navbar = () => {
      
        <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-50 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-65 w-30 gap-3 p-5 shadow">
         
         <Link
       to="Intro"
@@ -100,7 +117,7 @@ const Navbar = () => {
       duration={500}
       spy={true}
       offset={-80} 
-      className="cursor-pointer"
+      className="cursor-pointer pb-1 text-center w-10/12"
       activeClass="border-b-2"
     >
       Intro
@@ -112,7 +129,7 @@ const Navbar = () => {
       duration={500}
       spy={true}
       offset={-80}
-      className="cursor-pointer w-3/12"
+      className="cursor-pointer pb-1 text-center w-10/12"
       activeClass="border-b-2"
     >
       About
@@ -124,7 +141,7 @@ const Navbar = () => {
       duration={500}
       spy={true}
       offset={-80}
-      className="cursor-pointer"
+      className="cursor-pointer pb-1 text-center w-10/12"
       activeClass="border-b-2"
     >
       Skills
@@ -136,13 +153,32 @@ const Navbar = () => {
       duration={500}
       spy={true}
       offset={-80}
-      className="cursor-pointer"
+      className="cursor-pointer pb-1 text-center w-10/12"
       activeClass="border-b-2"
     >
       Projects
     </Link>
+
+    
       </ul> 
+     <button className="
+    btn-sm md:btn-sm 
+    relative
+   px-3 py-1
+    rounded-xl
+    bg-[#6f8b76]
+    text-gray-900
      
+    border-2 border-[#7b927e]
+    shadow-[5px_5px_0_0_#4f6653]
+    transition-transform duration-500
+    hover:translate-x-2 hover:translate-y-3
+    active:translate-x-0 active:translate-y-0
+    flex flex-row items-center gap-2 justify-center
+    ">
+    <span className='text-center'><a href="">Hire </a></span>
+    
+    </button>
     </div>
     
 </div>

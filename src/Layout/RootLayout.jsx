@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar';
 import Intro from '../Contents/Intro';
 import About from '../Contents/About';
 import Skills from '../Contents/Skills/Skills';
+import Projects from '../Contents/Projects/Projects';
 
 
 const RootLayout = () => {
@@ -13,6 +14,7 @@ const RootLayout = () => {
             <Intro></Intro>
             <About></About>
             <Skills></Skills>
+            <Projects></Projects>
           
         </div>
     );

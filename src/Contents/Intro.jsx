@@ -1,12 +1,13 @@
 import React from 'react';
 import DecryptedText from '../../ReactBits/DecryptedText/DecryptedText'
+import BlurText from '../../ReactBits/BlurText/BlurText'
 import { FiDownload } from "react-icons/fi";
 import pfp from '../assets/mainpic.jpg'
 
 
 const Intro = () => {
 return (
-<div id='Intro' className='w-10/12 mx-auto flex flex-col-reverse md:flex-row justify-between '>
+<div id='Intro' className='w-10/12 mx-auto flex flex-col-reverse md:flex-row justify-between md:items-center '>
 
 <div className='space-y-4'>
 <h1> <span className='font-extrabold text-4xl'><div style={{ marginTop: '4rem' }}>
@@ -16,7 +17,14 @@ animateOn="view"
 revealDirection="center"
 />
 </div></span></h1>
-<h2 className='text-3xl  font-bold'>Frontend Developer</h2>
+<BlurText
+  text="Frontend Developer"
+  delay={350}
+  animateBy="words"
+  direction="top"
+//   onAnimationComplete={handleAnimationComplete}
+  className="text-2xl mb-8"
+/>
 <p>
 
 <DecryptedText
@@ -35,7 +43,7 @@ relative
 px-6 py-2
 rounded-xl
 bg-[#6f8b76]
-text-green-950
+text-gray-900
 tracking-wide text-base
 border-2 border-[#7b927e]
 shadow-[5px_5px_0_0_#4f6653]
@@ -52,7 +60,7 @@ relative
 px-6 py-2
 rounded-xl
 bg-[#6f8b76]
-text-green-950
+text-gray-900
 tracking-wide text-base
 border-2 border-[#7b927e]
 shadow-[5px_5px_0_0_#4f6653]
@@ -68,7 +76,7 @@ flex flex-row items-center gap-2 justify-center
 </div>
 {/* image */}
 <section >
-<img src={pfp} alt="profile-picture" className=' bg-main-foreground rounded-full h-34 w-32 md:rounded-full md:h-48 md:w-135 lg:rounded-full lg:h-75 border-1 ' />
+<img src={pfp} alt="profile-picture" className=' bg-main-foreground rounded-full h-48 w-48 md:rounded-full md:h-48 md:w-135 lg:rounded-full lg:h-75 border-2 ' />
 </section>
 
 {/* contact */}

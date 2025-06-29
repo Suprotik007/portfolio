@@ -18,7 +18,7 @@ import OnTarget from './OnTarget';
 const Skills = () => {
     return (
         <div id='Skills' className='w-10/12 mx-auto '>
-            <h1 className='text-3xl font-bold text-center mb-8 '>I Know</h1>
+            <h1 className='text-3xl font-bold text-center mb-8 '>I Build With</h1>
 
 <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
     <Frontend></Frontend>
