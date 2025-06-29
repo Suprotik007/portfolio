@@ -1,8 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router';
-import FuzzyText from '../../ReactBits/FuzzyText/FuzzyText';
 import TextPressure from '../../ReactBits/TextPressure/TextPressure';
-import DropDown from './DropDown';
+
   
 
 const Navbar = () => {
@@ -17,11 +16,11 @@ const Navbar = () => {
        </div>
     )
     return (
-       <div className="navbar w-11/12 mx-auto shadow-sm">
+       <div className="navbar w-11/12 mx-auto ">
   <div className="navbar-start">
     
-    <a className="btn btn-ghost text-xl"><span><TextPressure 
-    text="<.....Suprotik ...../>"
+    <a className=" bg-[#151b14]  text-xl"><span><TextPressure 
+    text="<..... Suprotik ...../>"
     flex={true}
     alpha={false}
     stroke={false}
