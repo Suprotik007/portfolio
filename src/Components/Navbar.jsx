@@ -16,8 +16,8 @@ const Navbar = () => {
        </div>
     )
     return (
-       <div className="navbar w-11/12 mx-auto ">
-  <div className="navbar-start">
+       <div className="navbar w-11/12 bg-[#151b14]  mx-auto sticky top-0 z-2 ">
+  <div className="navbar-start ">
     
     <a className=" bg-[#151b14]  text-xl"><span><TextPressure 
     text="<..... Suprotik ...../>"
