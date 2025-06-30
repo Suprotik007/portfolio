@@ -6,11 +6,13 @@ import {
 //   SiMaterialui,
   SiFramer,
 } from "react-icons/si";
+ 
 import { FaReact } from "react-icons/fa"
 
 const Design = () => {
     return (
-         <div className="rounded-lg  p-6  items-center text-center border-1 border-green-600 shadow-2xl shadow-gray-800">
+        <div data-aos="zoom-in-left" className=' transition-all duration-300 ease-in-out  justify-center items-center rounded-lg hover:scale-105'>
+ <div className="rounded-lg  p-6  items-center text-center border-1 border-green-600 shadow-2xl shadow-gray-800">
     <h3 className="text-xl border-b-1 font-bold pb-2 mb-4">Design & UI </h3>
     <div className="grid grid-cols-2 space-y-3 w-full  max-w-xs">
       <div className="flex items-center space-x-3">
@@ -35,6 +37,8 @@ const Design = () => {
      
     </div>
   </div>
+
+        </div>
     );
 };
 
