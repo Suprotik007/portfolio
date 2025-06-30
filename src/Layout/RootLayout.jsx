@@ -4,6 +4,8 @@ import Intro from '../Contents/Intro';
 import About from '../Contents/About';
 import Skills from '../Contents/Skills/Skills';
 import Projects from '../Contents/Projects/Projects';
+import Email from '../Contents/Email/Email';
+import Footer from '../Components/Footer';
 
 
 const RootLayout = () => {
@@ -15,7 +17,8 @@ const RootLayout = () => {
             <About></About>
             <Skills></Skills>
             <Projects></Projects>
-          
+            <Email></Email>
+          <Footer></Footer>
         </div>
     );
 };

@@ -6,9 +6,10 @@ const Projects = () => {
     return (
         <div id='Projects' className='w-10/12 mx-auto'>
             <h1 className='text-3xl font-bold text-center mb-8'>Projects</h1>
-            <div className='grid grid-cols-1 gap-10'>
-                <GreenHub></GreenHub>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 <MoonLit></MoonLit>
+                <GreenHub></GreenHub>
+                
             </div>
         </div>
     );

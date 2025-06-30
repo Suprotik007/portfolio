@@ -6,6 +6,9 @@ import {
 //   SiMaterialui,
   SiFramer,
 } from "react-icons/si";
+import 'aos/dist/aos.css';
+import Aos from 'aos';
+Aos.init();
  
 import { FaReact } from "react-icons/fa"
 

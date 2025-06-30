@@ -1,28 +1,32 @@
 import React from "react";
 import { SiGithub } from "react-icons/si"
 import { FaLink } from "react-icons/fa";
+import greenHubImg from '../../assets/greenhub-light.png'
+import 'aos/dist/aos.css';
+import Aos from 'aos';
+Aos.init();
 
 const GreenHub = () => (
-  <div className=" mx-auto bg-[#151d17] tracking-wide text-base shadow-[5px_5px_0_0_#4f6653]
+  <div data-aos="zoom-in-right" className=" mx-auto bg-[#151d17] tracking-wide text-base shadow-[8px_8px_2px_0_#4f6653]
 border-2 border-[#7b927e]  rounded-xl p-5 text-[#e1eae3] font-mono ">
 
     <div className="mb-6  text-sm text-[#8eb897]">
-        <img src="src/assets/greenhub-new.png" alt=""className="h-50 w-full md:h-auto rounded-lg" />
+        <img src={greenHubImg} alt=""className="h-50 w-full md:h-100 lg:h-80   rounded-lg" />
     </div>
 
     <h2 className="text-2xl border-b pb-3 font-bold mb-4 tracking-wide">
       GreenHub- <span className="text-[#7b927e] ">Let's make the world green</span>
     </h2>
-    <p className="mb-6 text-[#b0c4b1]">
+    <p className="mb-6 ">
      Garden Explorer is a vibrant platform designed for gardening enthusiasts to connect, share knowledge, and grow together built using React and Node.Js
     </p>
     <div className="flex flex-wrap gap-3 mb-10">
-              <span className="bg-[#3a5640] border-1 text-[#e1eae3] px-4 py-1 rounded-md text-sm">React</span>
-      <span className="bg-[#3a5640] border-1 text-[#e1eae3] px-4 py-1 rounded-md text-sm">Express</span>
+              <span className="bg-[#3a5640]  shadow-[2px_4px_0_0_#4f6653] border-1 text-[#e1eae3] px-4 py-1 rounded-md text-sm">React</span>
+      <span className="bg-[#3a5640]  shadow-[2px_4px_0_0_#4f6653] border-1 text-[#e1eae3] px-4 py-1 rounded-md text-sm">Express</span>
 
-      <span className="bg-[#3a5640] border-1 text-[#e1eae3] px-4 py-1 rounded-md text-sm">MongoDB</span>
-      <span className="bg-[#3a5640] border-1 text-[#e1eae3] px-4 py-1 rounded-md text-sm">Firebase</span>
-      <span className="bg-[#3a5640] text-[#e1eae3] border-1 px-4 py-1 rounded-md text-sm">TailWindCSS</span>
+      <span className="bg-[#3a5640]  shadow-[2px_4px_0_0_#4f6653] border-1 text-[#e1eae3] px-4 py-1 rounded-md text-sm">MongoDB</span>
+      <span className="bg-[#3a5640]  shadow-[2px_4px_0_0_#4f6653] border-1 text-[#e1eae3] px-4 py-1 rounded-md text-sm">Firebase</span>
+      <span className="bg-[#3a5640]  shadow-[2px_4px_0_0_#4f6653]  border-1 px-4 py-1 rounded-md text-sm">TailWindCSS</span>
     
       
     </div>

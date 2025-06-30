@@ -1,5 +1,7 @@
 import React from 'react';
 import DecryptedText from '../../ReactBits/DecryptedText/DecryptedText'
+// import { motion } from "motion/react"
+import { motion } from 'framer-motion';
 import BlurText from '../../ReactBits/BlurText/BlurText'
 import { FiDownload } from "react-icons/fi";
 import pfp from '../assets/mainpic.jpg'
@@ -76,10 +78,16 @@ flex flex-row items-center gap-2 justify-center
 </div>
 {/* image */}
 <section >
-<img src={pfp} alt="profile-picture" className=' bg-main-foreground rounded-full h-48 w-48 md:rounded-full md:h-48 md:w-135 lg:rounded-full lg:h-75 border-2 ' />
+
+    <motion.img
+         src={pfp}
+         animate={{y:[0,20,0]}}
+         transition={{duration:5,repeat:Infinity}}
+        className=' bg-main-foreground rounded-full h-48 w-48 md:rounded-full md:h-48 md:w-135 lg:rounded-full lg:h-75 border-2 ' alt="" />
+        
 </section>
 
-{/* contact */}
+
 
 </div>
 );
