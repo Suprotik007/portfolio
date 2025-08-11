@@ -19,7 +19,7 @@ border-2 border-[#7b927e]  rounded-xl p-5 text-[#e1eae3] font-mono ">
       Moonlit- <span className="text-[#7b927e] ">Stay Cozy</span>
     </h2>
     <p className="mb-6 text-gray-200">
-   A modern, fully responsive hotel booking platform that provides users with a seamless, intuitive experience for discovering and booking hotel rooms built using React and Node.Js
+   A modern, fully responsive hotel booking platform that provides users with a seamless, intuitive experience for discovering and booking hotel rooms built using React and Node.Js. 
     </p>
     <div className="flex flex-wrap gap-3 mb-10">
                 <span className="bg-[#3a5640]  shadow-[2px_4px_0_0_#4f6653] border-1 text-[#e1eae3] px-4 py-1 rounded-md text-sm">React</span>
