@@ -71,7 +71,7 @@ hover:translate-x-2 hover:translate-y-3
 active:translate-x-0 active:translate-y-0
 flex flex-row items-center gap-2 justify-center
 ">
-<span className='text-center'><a href="">Resume </a></span>
+<span className='text-center'><a href="https://drive.google.com/file/d/1KFFRbxqkzVh9kCdh0G0fckRrsxV8Hauk/view">Resume </a></span>
 <span><FiDownload /></span>
 </button>
 </div>
