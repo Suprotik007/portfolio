@@ -17,13 +17,14 @@ const Authentication = () => {
             <SiFirebase size={30} className="text-yellow-500" />
             <span>Firebase Auth</span>
           </div>
+         
           <div className="flex items-center space-x-3">
             <SiJsonwebtokens size={30} className="text-purple-600" />
             <span>JWT</span>
           </div>
         </div>
       </div>
-
+ 
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiCss3, SiHtml5, SiJavascript, SiReact, SiTailwindcss } from 'react-icons/si';
+import { SiCss3, SiHtml5,  SiNextdotjs, SiReact, SiTailwindcss,  } from 'react-icons/si';
 
 import 'aos/dist/aos.css';
 import Aos from 'aos';
@@ -15,10 +15,11 @@ const Frontend = () => {
             <SiReact size={30} className="text-blue-500" />
             <span>React</span>
           </div>
-          <div className="flex items-center space-x-3">
-            <SiJavascript size={30} className="text-yellow-400" />
-            <span>JavaScript</span>
-          </div>
+          <div className="flex items-center space-x-3 ">
+          <SiNextdotjs size={30} className="text-gray-400" />
+          <span>Next.js</span>
+        </div>
+          
           <div className="flex items-center space-x-3">
             <SiTailwindcss size={30} className="text-teal-400" />
             <span>Tailwind </span>

@@ -198,17 +198,6 @@ const Navbar = () => {
     </Link>
 
 
-  {/* <Link
-      to="Hire"
-      smooth={true}
-      duration={500}
-      spy={true}
-      offset={-80}
-      className="cursor-pointer pb-1 text-center w-10/12"
-      activeClass="border-b-2"
-    >
-      Send Proposal
-    </Link> */}
     
       </ul> 
 
