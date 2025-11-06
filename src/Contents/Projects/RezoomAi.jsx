@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { FaLink } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
-import eduventureImg from "../../assets/Eduventure-1.png";
+import RezoomAiImg from "../../assets/rezoomAiImg.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Eduventure = () => {
+const RezoomAi = () => {
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
@@ -20,33 +20,27 @@ const Eduventure = () => {
     >
       <div className="mb-6 text-sm text-[#8eb897]">
         <img
-          src={eduventureImg}
-          alt="Eduventure Screenshot"
+          src={RezoomAiImg}
+          alt="RezoomAi Screenshot"
           className="h-50 w-full md:h-auto rounded-lg"
         />
       </div>
 
       <h2 className="text-2xl border-b pb-3 font-bold mb-4 tracking-wide">
-        Eduventure -{" "}
+        RezoomAi-{" "}
         <span className="text-[#7b927e]">
-          Together we learn, together we lead
+         Open your career's door
         </span>
       </h2>
 
       <p className="mb-4 text-gray-200">
-        A full-stack e-learning platform where students can explore and enroll
-        in classes, teachers can create and manage their own courses, and admins
-        can control the platform's operations made with React, Express, MongoDB
-        and Firebase.
+        A full-stack career-assistance platform that helps users build standout professional profiles. Allows users to create resumes, check ATS compatibility scores, generate personalized cover letters and LinkedIn summaries, and even practice through AI-powered mock interviews. 
       </p>
 
       {/* Hidden on small screens unless showMore is true */}
-      <div className={`${showMore ? "block" : "hidden"}`}>
+      <div className={` ${showMore ? "block" : "hidden"}`}>
         <p className="mb-6 text-gray-200">
-          The platform features a user-friendly interface, secure
-          authentication, and a responsive design, ensuring a seamless
-          experience across devices. It also includes a review system to enhance
-          course quality.
+          Built with Next.js, Node.js, and TypeScript, Rezoom AI integrates OpenAI API, n8n automation, GSAP animations, and SheraCN UI for a sleek, responsive, and intelligent user experience.
         </p>
       </div>
 
@@ -62,7 +56,7 @@ const Eduventure = () => {
 
       {/* Tech stack */}
       <div className="flex flex-wrap gap-3 mb-10">
-        {["React", "Express", "MongoDB", "Firebase", "TailWindCSS", "JWT"].map(
+        {[ "TypeScript","Next.js","Express", "MongoDB", "Firebase", "TailWindCSS", "JWT", "SheraUi", "Gsap"].map(
           (tech, i) => (
             <span
               key={i}
@@ -77,7 +71,7 @@ const Eduventure = () => {
       {/* Buttons */}
       <div className="flex flex-col md:flex-row gap-5">
         <a
-          href="https://eduventure-ox.netlify.app/"
+          href="https://rezoom-ai-pi.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="relative px-6 py-2 rounded-xl bg-[#6f8b76] text-gray-900 tracking-wide text-base
@@ -89,7 +83,7 @@ const Eduventure = () => {
         </a>
 
         <a
-          href="https://github.com/Suprotik007/Eduventure"
+          href="https://github.com/Suprotik007/rezoom-ai"
           target="_blank"
           rel="noopener noreferrer"
           className="relative px-6 py-2 rounded-xl bg-[#6f8b76] text-gray-900 tracking-wide text-base
@@ -104,4 +98,4 @@ const Eduventure = () => {
   );
 };
 
-export default Eduventure;
+export default RezoomAi;
