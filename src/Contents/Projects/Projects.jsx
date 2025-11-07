@@ -11,7 +11,7 @@ const Projects = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 <RezoomAi></RezoomAi>
                 <Eduventure></Eduventure>
-                <MoonLit></MoonLit>
+                {/* <MoonLit></MoonLit> */}
                 <GreenHub></GreenHub>
                 
             </div>
